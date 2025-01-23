@@ -1,18 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "ESNext", // 最新の JavaScript 機能を使用
-    "module": "ESNext", // ES モジュールを使用
-    "jsx": "react-jsx", // React の JSX サポート
-    "strict": true, // 厳格な型チェックを有効化
-    "moduleResolution": "Node", // Node.js のモジュール解決方式
-    "esModuleInterop": true, // ES モジュールと CommonJS の互換性
-    "skipLibCheck": true, // 型定義ファイルのスキップ
-    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字を厳密に管理
-    "baseUrl": ".", // 絶対パスインポートの基準
-    "paths": {
-      "@/*": ["src/*"] // エイリアス設定
-    }
-  },
-  "include": ["src"], // コンパイル対象ディレクトリ
-  "exclude": ["node_modules", "dist"] // 除外対象
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
